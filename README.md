@@ -112,23 +112,35 @@ LIMIT 10;
 docker compose up
 ````
 ### Access pgAdmin
-````
+
 Open in your browser:
+````
 http://localhost:5050
 ````
 **Login:**
+- Email: 
 ```
-- Email: pgadmin4@pgadmin.org
+pgadmin4@pgadmin.org
 ```
+- Password: 
 ```
-- Password: postgres
+postgres
 ```
 ### Database connection
 
-- Host: db
-- User: postgres
-- Password: postgres
-- Database: northwind
+- Host: 
+```db
+```
+- User:
+```postgres
+```
+- Password: 
+```postgres
+```
+- Database: 
+```
+northwind
+```
 ---
 
 ## 🧩 Key Concepts Used

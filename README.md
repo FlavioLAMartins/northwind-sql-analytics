@@ -77,6 +77,28 @@ This project answers the following questions:
 
 ---
 
+## 🚀 Quick Start
+
+After running the project, the database is automatically initialized with:
+
+- Northwind dataset (tables and data)
+- Pre-built analytical views
+
+You can immediately start querying the views without any additional setup.
+
+Example:
+
+```sql
+SELECT * FROM vw_total_revenues_per_customer;
+
+SELECT * FROM vw_customer_revenue_groups;
+
+SELECT * FROM vw_top_products_by_revenue
+ORDER BY total_revenue DESC
+LIMIT 10;
+```
+
+
 ## ⚙️ Setup
 
 ### Using Docker
@@ -85,12 +107,13 @@ This project answers the following questions:
 - Docker
 - Docker Compose
 
-#### Run the project:
+#### Run the project (database and views will be created automatically):
 ```
 docker compose up
 ````
 ### Access pgAdmin
 ````
+Open in your browser:
 http://localhost:5050
 ````
 **Login:**

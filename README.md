@@ -97,27 +97,24 @@ SELECT * FROM vw_top_products_by_revenue
 ORDER BY total_revenue DESC
 LIMIT 10;
 ```
-
-
 ## ⚙️ Setup
-
 ### Using Docker
-
-#### Requirements:
+Requirements:
 - Docker
 - Docker Compose
 
-#### Run the project (database and views will be created automatically):
+Run the project (database and views will be created automatically):
 ```
 docker compose up
-````
+```
 ### Access pgAdmin
 
 Open in your browser:
-````
+```
 http://localhost:5050
 ````
-**Login:**
+Login:
+
 - Email: 
 ```
 pgadmin4@pgadmin.org
@@ -126,40 +123,61 @@ pgadmin4@pgadmin.org
 ```
 postgres
 ```
-### Database connection
+## Connect to the database (pgAdmin)
 
-- Host: 
-```db
-```
-- User:
-```postgres
-```
-- Password: 
-```postgres
-```
-- Database: 
+After opening pgAdmin, create a new server:
+
+- Click on "Add New Server" or right-click on "Servers" → Register → Server
+
+### General tab:
+
+Name: 
 ```
 northwind
 ```
----
+Connection tab:
+
+Host name/address:
+```
+db
+```
+Port: 
+```
+5432
+```
+Maintenance database: 
+```
+postgres
+```
+Username:
+```
+postgres
+```
+Password: 
+```
+postgres
+```
+
+Click Save.
+
+Once connected, navigate to:
+
+Servers → northwind → Databases → northwind → Schemas → public → Views
+
+All analytical views will already be available.
 
 ## 🧩 Key Concepts Used
-
-- Aggregations (`SUM`, `GROUP BY`)
-- Window functions (`NTILE`, `LAG`, `SUM OVER`)
+- Aggregations (SUM, GROUP BY)
+- Window functions (NTILE, LAG, SUM OVER)
 - Data segmentation
 - Business-driven analysis
 - SQL best practices
-
----
 
 ## 🚀 Conclusion
 
 This project demonstrates how SQL can be used not only to query data, but to generate actionable business insights.
 
 It covers customer behavior, product performance, revenue trends, and segmentation strategies — all essential components for data-driven decision making.
-
----
 
 ## 📌 Author
 

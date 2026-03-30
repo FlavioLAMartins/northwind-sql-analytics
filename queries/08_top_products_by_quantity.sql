@@ -2,7 +2,7 @@
 -- Metric: Total quantity sold per product
 -- Note: Complements revenue-based ranking
 
-CREATE VIEW vw_top_products_by_quantity AS
+CREATE OR REPLACE VIEW vw_top_products_by_quantity AS
 SELECT 
     p.product_id,
     p.product_name,

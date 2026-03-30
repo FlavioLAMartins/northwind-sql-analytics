@@ -1,7 +1,7 @@
 -- Objective: Segment customers into 5 groups based on total revenue
 -- Method: NTILE(5) window function
 
-CREATE VIEW vw_customer_revenue_groups AS
+CREATE OR REPLACE VIEW vw_customer_revenue_groups AS
 SELECT 
     customer_id,
     company_name,

@@ -86,17 +86,20 @@ This project answers the following questions:
 - Docker Compose
 
 #### Run the project:
-
+```
 docker compose up
-
+````
 ### Access pgAdmin
-
+````
 http://localhost:5050
-
+````
 **Login:**
+```
 - Email: pgadmin4@pgadmin.org
+```
+```
 - Password: postgres
-
+```
 ### Database connection
 
 - Host: db

@@ -2,7 +2,7 @@
 -- Criteria: Total payments greater than 1000 (net revenue)
 -- Filter: Country = UK
 
-CREATE VIEW vw_uk_customers_with_payments_greater_than_1000 AS
+CREATE OR REPLACE VIEW vw_uk_customers_with_payments_greater_than_1000 AS
 SELECT 
     c.customer_id,
     c.company_name,

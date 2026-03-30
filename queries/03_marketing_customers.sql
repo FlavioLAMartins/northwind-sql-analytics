@@ -2,7 +2,7 @@
 -- Criteria: Customers in lower revenue segments (groups 3, 4, and 5)
 -- Source: Customer segmentation based on NTILE(5)
 
-CREATE VIEW vw_marketing_customers AS
+CREATE OR REPLACE VIEW vw_marketing_customers AS
 SELECT 
     customer_id,
     company_name,

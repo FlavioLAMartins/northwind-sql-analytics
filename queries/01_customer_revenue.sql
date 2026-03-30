@@ -1,7 +1,7 @@
 -- Objective: Calculate total revenue per customer
 -- Metric: Net revenue (including discounts)
 
-CREATE VIEW vw_total_revenues_per_customer AS
+CREATE OR REPLACE VIEW vw_total_revenues_per_customer AS
 SELECT 
     c.customer_id,
     c.company_name,

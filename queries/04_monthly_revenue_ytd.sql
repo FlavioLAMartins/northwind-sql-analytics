@@ -1,7 +1,7 @@
 -- Objective: Analyze monthly revenue performance with month-over-month change and year-to-date revenue
 -- Metrics: monthly revenue, previous month revenue, monthly difference, monthly percentage change, and YTD revenue
 
-CREATE VIEW vw_monthly_revenue_ytd AS
+CREATE OR REPLACE VIEW vw_monthly_revenue_ytd AS
 WITH monthly_revenue AS (
     SELECT
         EXTRACT(YEAR FROM o.order_date) AS year,

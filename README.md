@@ -166,7 +166,7 @@ Servers → northwind → Databases → northwind → Schemas → public → Vie
 
 All analytical views will already be available.
 
-## 🧩 Key Concepts Used
+### 🧩 Key Concepts Used
 - Aggregations (SUM, GROUP BY)
 - Window functions (NTILE, LAG, SUM OVER)
 - Data segmentation
@@ -179,6 +179,6 @@ This project demonstrates how SQL can be used not only to query data, but to gen
 
 It covers customer behavior, product performance, revenue trends, and segmentation strategies — all essential components for data-driven decision making.
 
-## 📌 Author
+### 📌 Author
 
 Flavio Martins
